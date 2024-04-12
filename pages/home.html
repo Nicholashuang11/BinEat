@@ -4,72 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Seller</title>
+    
     <link rel = "stylesheet" href = "../styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+    200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "popcontainer">
-        <img src ="/assets/spaghetti-bolognese-recipe.jpg"class ="popimg">
+    <div class = "popcontainer">   
+        <h1 class = "poptitle">Popular Food</h1>
+        <h1 class = "popfoodname">Spaghetti Bolognese</h1>
     </div>
     
     
     <div class = "categorycontainer">
-        <div class ="categorytitle c1">
+        <button class ="categorytitle"id ="c1">
             All Recipes     
-        </div>
-        <div class ="categorytitle c2">
-            Custom Foods
-        </div>
-        <div class ="categorytitle c3">
-            Shop Ingredients
-        </div>
-        <div class ="categorytitle c4">
-            BMR Calculator
-        </div>
-        <div class ="categorytitle c5">
-            Cooking Tips & Tricks
-        </div>
+        </button>
+        <button class ="categorytitle"id = "c2">
+            Stock Products
+        </button>
+        <button class ="categorytitle"id = "c3">
+            Orders
+        </button>
+        <button class ="categorytitle"id = "c4">
+            Financial Statements
+        </button>
+        <button class ="categorytitle"id = "c5">
+            Register Shop
+        </button>
     </div>
     
-    <div class = "beveragecontainer">
-        <div class = "b1f1">
-            <img src = "../assets/burger.png" class = "food">
-            <h3>294,9kcal</h3>
-            <h1>Burger</h1>
-            <h1>15 min</h1>
+    <div class = "menucontainer">
+        <div class = "foodcontainer">
+            <button id = "pic11"class = "foodbutton">
+                <img src = "../assets/burger.png" class = "foodimg">
+            </button> 
+            <div class = "fooddetails">
+                <div class = "foodleft">
+                    <h4 class = "foodleftcalories">294,9kcal</h4>
+                    <h1 class = "foodleftname">Burger</h1>
+                    <h1 class = "foodlefttime">15 min</h1> 
+                </div>
+                <div class = "foodright">
+                        <div class = "rating">
+                            <img src="../assets/star.png">
+                            <h3>4.5</h3>    
+                        </div>
+                        <div class = "foodrighticon">
+                            <img src = "../assets/love.png">
+                            <img src = "../assets/chat.png">    
+                        </div>  
+                </div>
+            </div>
         </div>
-        <div class = "b1f2">
-            <img src = "../assets/applepie.jpeg"class="food">
+        <div class = "foodcontainer">
+            <button id = "pic12"class = "foodbutton">
+                <img src = "../assets/applepie.jpeg" class = "foodimg">
+            </button>
+            <div class = "fooddetails">
+                <div class = "foodleft">
+                    <h4 class = "foodleftcalories">237,1 kcal</h4>
+                    <h1 class = "foodleftname">Apple Pie</h1>
+                    <h1 class = "foodlefttime">1 hour</h1> 
+                </div>
+                <div class = "foodright">
+                        <div class = "rating">
+                            <img src="../assets/star.png">
+                            <h3>4</h3>    
+                        </div>
+                        <div class = "foodrighticon">
+                            <img src = "../assets/love.png">
+                            <img src = "../assets/chat.png">    
+                        </div>  
+                </div>
+            </div>
         </div>
-        <div class = "b1f3">
-            <img src = "../assets/maccheese.jpg"class = "food">
+        <div class = "foodcontainer">
+            <button id = "pic13"class = "foodbutton">
+                <img src = "../assets/maccheese.jpg" class = "foodimg">
+            </button>
+            <div class = "fooddetails">
+                <div class = "foodleft">
+                    <h4 class = "foodleftcalories">164kcal</h4>
+                    <h1 class = "foodleftname">Mac and Cheese</h1>
+                    <h1 class = "foodlefttime">30 min</h1> 
+                </div>
+                <div class = "foodright">
+                        <div class = "rating">
+                            <img src="../assets/star.png">
+                            <h3>3.5</h3>    
+                        </div>
+                        <div class = "foodrighticon">
+                            <img src = "../assets/love.png">
+                            <img src = "../assets/chat.png">    
+                        </div>  
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class = "beveragecontainer">
-        <div class = "b1f1">
-            <img src = "../assets/sushi.webp" class = "food">
-            
-        </div>
-        <div class = "b1f2">
-            <img src = "../assets/Fried-Rice-9-500x500.jpg"class="food">
-        </div>
-        <div class = "b1f3">
-            <img src = "../assets/tom-yum-goong-blog.jpg"class = "food">
-        </div>
-    </div>
+        
     
-    <div class = "beveragecontainer">
-        <div class = "b1f1">
-            <img src = "../assets/healthyspaghettibolo_80401_16x9.jpg" class = "food">
-        </div>
-        <div class = "b1f2">
-            <img src = "../assets/croissan.jpg"class="food">
-        </div>
-        <div class = "b1f3">
-            <img src = "../assets/pizza.jpg"class = "food">
-        </div>
-    </div>
+    
     
 
     <div class = "load more"></div>

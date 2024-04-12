@@ -1,66 +1,136 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+}
+
 .popcontainer{
     display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 88px;
-    margin-right: 88px;
-    
-}
-.popimg{ 
-    width: 100%;
-    height: 355px;
+    /* justify-content: center;
+    align-items: center; */
+    width:90%;
+    height:400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: url("../assets/spaghetti-bolognese-recipe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.poptitle{
+    color: #DC582A;
+    font-weight:700;
+    font-style: normal;
+}
+.popfoodname{
+    color:white;
+    position: absolute;
+    top: 25%;
+    font-weight:800;
+    font-style: normal;
 }
 .categorycontainer{
+    width: 90%;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 88px;
-    margin-right: 88px;
-
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 .categorytitle{
-    width: 236.8px;
+    width: 18%;
     height: 86px;
-    border: 2px;
     background-color: orange;
+    text-align: left;
     padding-left: 20px;
-    line-height: 86px;
     border-radius: 15px;
     color: white;
+    border-width: 0px;
+    font-weight: 600;
 }
-.categorytitle.c1{
+#c1{
     background-color: #FDC040;
 }
-.categorytitle.c2{
+#c2{
     background-color: #ED8B00;
 }
-.categorytitle.c3{
+#c3{
     background-color: #5FCCB2;
 }
-.categorytitle.c4{
+#c4{
     background-color: #F6784C;
 }
-.categorytitle.c5{
+#c5{
     background-color: #AD343E;
 }
-.beveragecontainer{
+
+
+.menucontainer{
     display:flex;
     flex-direction: row;
     margin-top: 40px;
-    width:100%;
-    height: 315px;
-    justify-content: center;
+    width:70%;
+    height:350px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
     
 }
-.b1fi{
 
-}
-.food{
-    width: 289px;
-    height: 200px;
+.foodcontainer{
+    width: 27%;
+    height: 350px;
+    box-shadow: 0 0 10px gray; 
     border-radius: 15px;
 }
+.foodbutton{
+    width: 100%;
+    border-width: 0;
+    margin-top: 2px;
+    background-color: transparent;
+}
+.foodimg{
+    width: 100%;
+    display: block;
+    height:200px;
+    border-radius: 15px;
+}
+.fooddetails{
+    display: flex;
+}
+.foodleft{
+    flex: 1;
+    margin-left: 10px;
+}
+.foodleftcalories{
+    color: lightgray;
+    font-size: 10px;
+}
+.foodleftname{
+    color:black;
+    font-size: 15px;
+}
+.foodlefttime{
+    color:#DC582A;
+    font-size: 15px;
+}
+.foodright{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.foodright img{
+    width: 20px;
+    height: 20px;
+}
+.rating{
+    color:lightgray;
+    
+.foodrighticon{
+
+}
+
