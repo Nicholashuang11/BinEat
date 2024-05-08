@@ -82,14 +82,14 @@ body {
 
 .foodcontainer{
     width: 27%;
-    height: 350px;
+    height: 315px;
     box-shadow: 0 0 10px gray; 
     border-radius: 15px;
 }
 .foodbutton{
     width: 100%;
     border-width: 0;
-    margin-top: 2px;
+    margin-top: 5px;
     background-color: transparent;
 }
 .foodimg{
@@ -98,39 +98,66 @@ body {
     height:200px;
     border-radius: 15px;
 }
-.fooddetails{
-    display: flex;
+.fooddetail{
+    
 }
-.foodleft{
+
+.fooddetailnamecontainer{
     flex: 1;
-    margin-left: 10px;
+    padding-left: 10px;
 }
-.foodleftcalories{
-    color: lightgray;
-    font-size: 10px;
-}
-.foodleftname{
+.fooddetailname{
     color:black;
     font-size: 15px;
+    margin: 0;
 }
-.foodlefttime{
-    color:#DC582A;
-    font-size: 15px;
-}
-.foodright{
+.icon{
     flex:1;
     display: flex;
-    flex-direction: column;
+    justify-content:flex-end;
+    margin:0;
+    padding-right: 10px;
 }
-
-.foodright img{
-    width: 20px;
-    height: 20px;
-}
-.rating{
-    color:lightgray;
+.love{
+    margin:0;
+    border-width: 0;
+    background-color: transparent;
     
-.foodrighticon{
-
 }
+.chat{
+    margin:0;
+    border-width: 0;
+    background-color: transparent;
+    
+}
+.fooddetailtime{
+    color:#DC582A;
+    font-size: 15px;
+    margin:0;
+}
+.fooddetailtimecontainer{
+    flex:1;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.fooddetail img{
+    width: 15px;
+    height: 15px;
+    
+}.rating{
+    color:lightgray;
+    margin: 0;
+}
+.calorie{
+    color: lightgray;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.d1{
+    display: flex;
+    flex-direction: row;
+}
+
 
