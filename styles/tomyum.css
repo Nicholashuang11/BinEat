@@ -7,7 +7,7 @@ body {
     display: block;
     /* justify-content: center;
     align-items: center; */
-    width:90%;
+    width:95vw;
     height:400px;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +19,7 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     box-sizing: border-box;
+    
 }
 .poptitle{
     color: #DC582A;
@@ -39,6 +40,7 @@ body {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
 }
 .categorytitle{
     width: 18%;
@@ -65,4 +67,92 @@ body {
 }
 #c5{
     background-color: #AD343E;
+}
+.recipecontainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.cookingsteps{
+    width: 100%;
+}
+.nutritionfacts{
+    background-color: #EEFD40;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.nutritionfacts ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.ingredients{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.foodimgcontainer{
+    display:flex;
+    flex:3;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+.foodimg{
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+}
+.detailcontainer{
+    flex:1;
+}
+.foodtitle{
+    text-align: center;
+}
+.cookingsteps li{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:900px){
+    .recipecontainer{
+        width: 900px;
+        border-radius: 15px;
+        
+    }
+    .foodimg{
+        min-width: 400px;
+        min-height: 300px;
+    }
+}
+@media(max-width:768px){
+    .recipecontainer{
+        min-width: 900px;
+        
+
+    }
+    .popcontainer{
+        min-width: 900px;
+        background-size: 95%;
+        border-radius: 15px;
+    }
+    .categorycontainer{
+        min-width: 900px;
+        justify-content: space-around;
+    }
+    .cookingsteps{
+        min-width: 900px;
+
+    }
+    .poptitle,.popfoodname{
+        margin-left: 20px;
+    }
 }
