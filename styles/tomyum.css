@@ -1,13 +1,11 @@
 body {
-    font-family: "Poppins", sans-serif;
-    height: 100%;
-}
+    font-family:"Poppins",sans-serif;
+    font-style: normal;
+} 
 
 .popcontainer{
     display: block;
-    /* justify-content: center;
-    align-items: center; */
-    width:95vw;
+    width:100%;
     height:400px;
     margin-left: auto;
     margin-right: auto;
@@ -16,15 +14,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-left: 10px;
     box-sizing: border-box;
-    
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .poptitle{
     color: #DC582A;
-    font-weight:700;
-    font-style: normal;
+    font-weight:600;
 }
 .popfoodname{
     color:white;
@@ -34,49 +30,68 @@ body {
     font-style: normal;
 }
 .categorycontainer{
-    width: 90%;
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+    gap: 20px;
 }
 .categorytitle{
+    font-family: "Poppins",sans-serif;
     width: 18%;
     height: 86px;
-    background-color: orange;
+    background-color: black;
     text-align: left;
     padding-left: 20px;
     border-radius: 15px;
     color: white;
     border-width: 0px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
 }
+
 #c1{
     background-color: #FDC040;
+}
+#c1:hover{
+    background-color: #e2ae3c;
 }
 #c2{
     background-color: #ED8B00;
 }
+#c2:hover{
+    background-color: #c37406;
+
+}
 #c3{
-    background-color: #5FCCB2;
+    background-color: #509E2F;
+}
+#c3:hover{
+    background-color: #367b18;
 }
 #c4{
     background-color: #F6784C;
 }
+#c4:hover{
+    background-color: #d46339;
+
+}
 #c5{
     background-color: #AD343E;
+}
+#c5:hover{
+    background-color: #8b242d;
 }
 .recipecontainer{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width:100%;
+}
 
-}
-.cookingsteps{
-    width: 100%;
-}
+
 .nutritionfacts{
     background-color: #EEFD40;
     border-radius: 10px;
@@ -114,45 +129,79 @@ body {
 }
 .foodtitle{
     text-align: center;
+    margin-top: 20px;
+}
+.cookingsteps{
+
 }
 .cookingsteps li{
-    width: 100%;
+    
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 10px;
 }
-
+.foodname{
+    display: inline;
+}
+.reviews{
+    display: inline;
+    color: gray;
+}
 @media(max-width:900px){
     .recipecontainer{
         width: 900px;
         border-radius: 15px;
         
     }
+    
+}
+@media(max-width:850px){
+    .recipecontainer{
+        min-width: 900px;
+    }
+    .popcontainer{
+        min-width: 850px;
+        background-size: 95%;
+        border-radius: 15px;
+        background-size: cover;
+        margin-left: 25px;
+    }
+    .categorycontainer{
+        min-width: 900px;
+        
+    }
+
+    .poptitle,.popfoodname{
+        margin-left: 20px;
+    }
+    .popfoodname{
+        font-size: 25px;
+    }
     .foodimg{
         min-width: 400px;
         min-height: 300px;
     }
+    .cookingsteps{
+        margin-right: 10px;
+        min-width: 800px;
+        font-size: 25px;
+    }
 }
-@media(max-width:768px){
-    .recipecontainer{
-        min-width: 900px;
-        
 
+
+@media(max-width:450px) {
+    .categorytitle{
+        font-weight: 500;
+        font-size: 15px;
     }
-    .popcontainer{
-        min-width: 900px;
-        background-size: 95%;
-        border-radius: 15px;
-    }
-    .categorycontainer{
-        min-width: 900px;
-        justify-content: space-around;
+    .ingredients,.nutritionfacts{
+        font-size: 17px;
+        font-weight: 600;
     }
     .cookingsteps{
-        min-width: 900px;
-
-    }
-    .poptitle,.popfoodname{
-        margin-left: 20px;
+        margin-right: 10px;
+        min-width: 800px;
+        font-size: 25px;
     }
 }
